@@ -1,0 +1,26 @@
+{
+  "name": "cipherschools-desktop",
+  "version": "1.0.0",
+  "description": "A desktop wrapper for CipherSchools built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.cipherschools.desktop",
+    "productName": "CipherSchools",
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "deb"
+    }
+  }
+}
